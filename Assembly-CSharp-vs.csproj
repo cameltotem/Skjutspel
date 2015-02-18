@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{4F5C8620-31C5-F496-D321-54E84BADDABA}</ProjectGuid>
+	<ProjectGuid>{EB5E2DBB-26B0-65A9-A828-338F52B7F807}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -89,9 +89,11 @@
      <Compile Include="Assets\_CompletedAssets\Scripts\Player\PlayerShooting.cs" />
      <Compile Include="Assets\ri.cs" />
      <None Include="Assets\NewComputeShader.compute" />
+     <None Include="Assets\FreeMachineGun\Shader\BDCS.shader" />
      <None Include="Assets\Shaders\Rim Lit Bumped Specular.shader" />
      <None Include="Assets\Fonts\LuckiestGuy\LICENSE.txt" />
      <None Include="Assets\Elementals\!Readme.txt" />
+     <None Include="Assets\FreeMachineGun\documentation.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>

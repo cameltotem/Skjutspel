@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{F272C616-F0C8-9CA1-E707-3FED9449AEF7}</ProjectGuid>
+	<ProjectGuid>{6C59C8CA-A8EA-7E2C-514E-4A81838DFC44}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -48,11 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\MobileInput\Scripts\Editor\CrossPlatformInputInitialize.cs" />
      <None Include="Assets\NewComputeShader.compute" />
+     <None Include="Assets\FreeMachineGun\Shader\BDCS.shader" />
      <None Include="Assets\Shaders\Rim Lit Bumped Specular.shader" />
      <None Include="Assets\Fonts\LuckiestGuy\LICENSE.txt" />
      <None Include="Assets\Elementals\!Readme.txt" />
+     <None Include="Assets\FreeMachineGun\documentation.txt" />
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/Felixs/Documents/GitHub/Skjutspel/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>C:/Users/Felixförfan/Documents/GitHub/Spel/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
@@ -66,7 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-vs.csproj">
-      <Project>{4F5C8620-31C5-F496-D321-54E84BADDABA}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
+      <Project>{EB5E2DBB-26B0-65A9-A828-338F52B7F807}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
