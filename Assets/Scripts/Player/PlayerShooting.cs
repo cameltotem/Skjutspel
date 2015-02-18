@@ -16,11 +16,12 @@ public class PlayerShooting : MonoBehaviour
     AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-	float force = 2000f;
+	int force = 99999;
 
 
     void Awake ()
     {
+
         shootableMask = LayerMask.GetMask ("Shootable");
         gunParticles = GetComponent<ParticleSystem> ();
         gunLine = GetComponent <LineRenderer> ();
@@ -36,6 +37,7 @@ public class PlayerShooting : MonoBehaviour
 		if(Input.GetButton ("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
             Shoot ();
+
         }
 
         if(timer >= timeBetweenBullets * effectsDisplayTime)
@@ -71,14 +73,21 @@ public class PlayerShooting : MonoBehaviour
 
         if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
         {
+
             EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
+			Cube cube = shootHit.collider.GetComponent <Cube> ();
             if(enemyHealth != null)
             {
                 enemyHealth.TakeDamage (damagePerShot, shootHit.point);
-				if(shootHit.rigidbody)
+
 				{
-					//(shootHit.rigidbody.AddForceAtPosition(force * shootRay.direction ,shootHit.point)
-					 
+					if (shootHit.transform.tag == "Shootable")
+					{
+					
+						shootHit.rigidbody.AddForceAtPosition (shootRay.direction * force, shootHit.point);
+					}
+
+
 					 
 					 }
             }

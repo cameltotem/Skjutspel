@@ -5,6 +5,8 @@ Project("{46CF8C8E-D4DE-D71B-EEBA-E09981563F5B}") = "Skjutspel", "Assembly-CShar
 EndProject
 Project("{46CF8C8E-D4DE-D71B-EEBA-E09981563F5B}") = "Skjutspel", "Assembly-CSharp-Editor.csproj", "{F272C616-F0C8-9CA1-E707-3FED9449AEF7}"
 EndProject
+Project("{46CF8C8E-D4DE-D71B-EEBA-E09981563F5B}") = "Skjutspel", "Assembly-UnityScript.unityproj", "{638F5CF8-21CA-6999-3D99-DB800D904BD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{F272C616-F0C8-9CA1-E707-3FED9449AEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F272C616-F0C8-9CA1-E707-3FED9449AEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F272C616-F0C8-9CA1-E707-3FED9449AEF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{638F5CF8-21CA-6999-3D99-DB800D904BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638F5CF8-21CA-6999-3D99-DB800D904BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638F5CF8-21CA-6999-3D99-DB800D904BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{638F5CF8-21CA-6999-3D99-DB800D904BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
+										GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -42,4 +48,5 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
+
 EndGlobal

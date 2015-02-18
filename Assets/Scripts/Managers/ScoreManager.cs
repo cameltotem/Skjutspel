@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
 public class ScoreManager : MonoBehaviour
-{
+{ // static variables håller inte ihop med en instans utan klassen själv.
     public static int score;
 
 
@@ -19,6 +19,6 @@ public class ScoreManager : MonoBehaviour
 
     void Update ()
     {
-        text.text = "Score: " + score;
+        text.text = "Poäng: " + score;
     }
 }
